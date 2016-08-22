@@ -24,10 +24,8 @@ $("#add_button").click(function() {
         }
     }
 
-    $("#result").html(added23);
+    lable.html(added23);
 });
-
-
 
 var interval = setInterval(function() {
 
@@ -40,7 +38,7 @@ var interval = setInterval(function() {
         now = new Date (tmp);
     }
 
-    $("#time").html(now.toLocaleString() + ":" + now.getMilliseconds());
+    $("#time").html(now.toLocaleString());
 
 
 }, 1);
