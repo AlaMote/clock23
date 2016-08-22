@@ -11,12 +11,12 @@ $("#add_button").click(function() {
         //рандомно добавляем число до 10
         result += Math.floor(Math.random() * Math.floor(Math.random() * 10));
 
-        //если перебор все плохо
+        //если перебор - все плохо
         if (result > 23) {
             added23 = "Перебор!";
             lable.css("color", "red");
         }
-        //если 23 задача выполнена
+        //если 23 - задача выполнена
         else if (result == 23) {
             added23 = "23 очка!";
             button.prop("disabled", "true");
